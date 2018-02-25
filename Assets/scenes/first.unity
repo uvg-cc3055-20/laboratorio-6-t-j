@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -758,6 +758,7 @@ GameObject:
   - component: {fileID: 1774751978}
   - component: {fileID: 1774751977}
   - component: {fileID: 1774751976}
+  - component: {fileID: 1774751980}
   m_Layer: 0
   m_Name: VirtualButton
   m_TagString: Untagged
@@ -772,8 +773,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1774751974}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0009999999, z: 0.265}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0.0009999999, z: 0.021000022}
+  m_LocalScale: {x: 0.41470662, y: 1, z: 0.7395446}
   m_Children: []
   m_Father: {fileID: 867513743}
   m_RootOrder: 1
@@ -845,7 +846,7 @@ MonoBehaviour:
   mSensitivity: 0
   mHasUpdatedPose: 1
   mPrevTransform:
-    e00: 0.42
+    e00: 0.8708839
     e01: 0
     e02: 0
     e03: 0
@@ -855,10 +856,122 @@ MonoBehaviour:
     e13: 0.0020999997
     e20: 0
     e21: 0
-    e22: 0.42
-    e23: 2.5165
+    e22: 1.5530435
+    e23: 2.0041
     e30: 0
     e31: 0
     e32: 0
     e33: 1
   mPrevParent: {fileID: 867513737}
+--- !u!114 &1774751980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774751974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ff21916b39c0049904ec21038036f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdAnim: {fileID: 2033151122}
+--- !u!1 &2033151121 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100122, guid: f2f7b64dd5c50f8479d6d1610f8537c1, type: 3}
+  m_PrefabInternal: {fileID: 399048180}
+--- !u!95 &2033151122 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: f2f7b64dd5c50f8479d6d1610f8537c1,
+    type: 3}
+  m_PrefabInternal: {fileID: 399048180}
+--- !u!114 &2033151123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2033151121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5edff6c59fbfee4d9a97bf3293e9106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &2033151124
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2033151121}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 148e954901f21104a960804e72ae599b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
